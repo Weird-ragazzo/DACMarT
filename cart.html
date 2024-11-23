@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DACMart - Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DACMart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <p><strong>Total:</strong> ₹<span id="total-price">0.00</span></p>
+            </div>
+
+            <section class="payment">
+    <h3>Payment Details</h3>
+    <form id="payment-form">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV:</label>
+        <div class="cvv-container">
+            <input type="password" id="cvv" name="cvv" placeholder="CVV" required>
+            <button type="button" id="toggle-cvv" class="toggle-btn">Show</button>
+        </div>
+
+        <button type="submit" class="btn">Pay Now</button>
+    </form>
+</section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>DACMart &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
